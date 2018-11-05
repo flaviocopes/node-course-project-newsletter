@@ -1,0 +1,32 @@
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/style.css')
+    link(rel='stylesheet', href='https://unpkg.com/pell/dist/pell.min.css')
+
+
+  body
+    main
+      h1 Compose email
+      
+      div#editor.pell
+    
+      button#send Send email
+      
+      hr
+    
+      h1 List of emails
+  
+      table
+        for entry in emails
+          tr
+            td #{entry.name}
+            td #{entry.email}
+            td #{entry.date}
+
+    script(src='https://unpkg.com/pell')
+    script(src='https://unpkg.com/axios/dist/axios.min.js')
+
+    script(src='/editor.js')

@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+  font-family: system-ui;
+  background-color: #ffe4e1;
+}
+
+main {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  max-width: 500px;
+  margin: 0 auto;  
+  margin-top: 100px;
+}
+
+form {
+  padding: 30px
+}
+
+input {
+  padding: 10px;
+}
+
+input[type=submit] {
+  padding: 10px 20px; 
+  background: white; 
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background: gray; 
+  color: white;
+}
+
+table {
+  padding: 30px;
+  width: 100%;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+}
+
+tr:nth-child(odd) {
+  background-color: lightblue;
+}
+
+td {
+  padding: 8px;
+}
+
+.pell-content {
+  text-align: left;
+}
+
+button#send {
+  margin-top: 15px;
+}
