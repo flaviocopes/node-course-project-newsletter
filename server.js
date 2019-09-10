@@ -111,7 +111,11 @@ app.get('/admin', (req, res) => {
     fs.closeSync(fs.openSync('./.data/initialized', 'w'))
     
     res.cookie('token', token, { httpOnly: true, secure: true })
-    res.sendFile(__dirname + '/views/admin.pug')  
+
+    getEmails().then(emails => {
+      res.render(__dirname + '/views/admin.pug', { emails: emails })
+      res.end()
+    })
   }
 })
 
